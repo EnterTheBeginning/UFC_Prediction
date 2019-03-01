@@ -1,3 +1,6 @@
 # UFC_Prediction
-Lets begin
-A useful tool to predict the result of future matches 
+A useful tool to predict the result of future matches   
+
+Dataset #1: Fightmetric   
+Dataset #2: Kaggle   
+
