@@ -38,7 +38,6 @@ def getDetailsRaw(carLink):
         time = postDate.split()
 
         newTime = timeConvert(time[1])
-
         newDateTime = " " + str(time[0]) + " " + str(newTime)
         return attrs, pricefinal, newDateTime
     except:
@@ -228,7 +227,7 @@ def parseDetails(cars, html):
 
 def main():
     #should be something like https://nwct.craigslist.org/search/cto
-    url_base = 'https://orlando.craigslist.org/search/cto'
+    
     #FILTER BREAKDOWN:
     '''
     hasPic = 1/0: Only cars that have images with the listing 
@@ -337,8 +336,8 @@ def main():
     # params = dict(hasPic=1, postedToday=0, search_distance=25, postal='12345', max_price=5000, max_auto_miles=170000,
     #               auto_transmission=2,
     #               auto_bodytype={3, 10, 8})
-
-    params = dict(max_price=10000,auto_make_model='civic')
+    url_base = 'https://orlando.craigslist.org/search/cto'
+    params = dict(max_price=10000,auto_make_model='accord')
 
     rsp = requests.get(url_base, params=params)
     # To check requests automatically created the right URL:
